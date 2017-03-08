@@ -153,6 +153,9 @@ let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_style_error_symbol = '✗'
 let g:syntastic_style_warning_symbol = '⚠'
 ```
+#### Fixes for git
+
+$ git config --global core.editor /usr/bin/vim
 
 #### Features
 

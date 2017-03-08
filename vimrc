@@ -77,7 +77,7 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'honza/vim-snippets'
 Plugin 'garbas/vim-snipmate'
 " awesome colorscheme
-Plugin 'tomasr/molokai'
+Plugin 'w0ng/vim-hybrid'
 " Git/mercurial/others diff icons on the side of the file lines
 Plugin 'mhinz/vim-signify'
 " Automatically sort python imports
@@ -125,8 +125,6 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'IndexedSearch'
 " XML/HTML tags navigation
 Plugin 'matchit.zip'
-" Gvim colorscheme
-Plugin 'Wombat'
 " Yank history navigation
 Plugin 'YankRing.vim'
 
@@ -154,9 +152,9 @@ set softtabstop=4
 set shiftwidth=4
 " highlight cursor line and column
 set cursorline
-set cursorcolumn
+"set cursorcolumn
 " hidden startup messages
-set shortmess=atI
+"set shortmess=atI
 " auto read and write
 set autowrite
 set autoread
@@ -247,14 +245,14 @@ nmap ,wr :RecurGrepFast <cword><CR>
 " use 256 colors when possible
 if &term =~? 'mlterm\|xterm\|xterm-256\|screen-256'
 	let &t_Co = 256
-    colorscheme molokai
+    colorscheme hybrid
 else
     colorscheme delek
 endif
 
 " colors for gvim
 if has('gui_running')
-    colorscheme wombat
+    colorscheme hybrid
 endif
 
 " when scrolling, keep cursor 3 lines away from screen border
@@ -531,7 +529,7 @@ autocmd BufNewFile * normal G
 " Vim-jsx ------------------------------
 
 " if you use JSX syntax in .js file, please enable it.
-let g:jsx_ext_required = 0
+let g:jsx_ext_required = 1
 
 " Vim-markdown ------------------------------
 
